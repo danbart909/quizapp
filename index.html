@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href = "https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href= "https://fonts.googleapis.com/css?family=Cabin|Amaranth:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+  <title>The Fantastic Fun Quiz</title>
+  <link href = "main.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body>
+<main class="mainspace" role="main" aria-live="polite">
+  <h2 id="title" aria-label="Welcome to the Math Quiz!">Welcome to the Math Quiz!</h2>
+  <hr>
+  <section id="currentQuestionDisplay" aria-label="Displays the number question the user is currently on.">Question Number: <span id="val2"></span></section>
+  <section class="response" aria-label="Says if you got the answer right or wrong."></section>
+  <form id="answerForm" role="form">
+  <section id="currentQuestion" aria-label="Your current question."></section>
+  <section id="intro" aria-label="Introduction.">Get ready to have your math skills tested!</section>
+  <p><section class="possible-answers" aria-label="Your possible answers to choose from." role="radiogroup"></section></p>
+  <section id="score" aria-label="Your score.">Your Score is: <span class="val">0</span></section>
+  <button type="submit" aria-label="Button to proceed through the Quiz." role="button">Let's Go!</button>
+  </form>
+</main>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type = "text/javascript" src = "index.js"></script>
+</body>
+</html>
